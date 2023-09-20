@@ -9,7 +9,9 @@
           ratione quasi quia ullam asperiores labore vitae dolore.lorem
         </p>
         <p class="font-bold">
-          Lorem ipsum dolor sit? <a href="#" class="underline ">Click here</a> Lorem ipsum dolor sit amet
+          Lorem ipsum dolor sit? <router-link :to="{ name: 'signup' }" class="underline">Sign up</router-link> Lorem ipsum
+          dolor
+          sit amet
           consectetur.
         </p>
       </div>

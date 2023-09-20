@@ -34,6 +34,7 @@
 </template>
 <script >
 import userImage from '@/assets/userimage.png'
+import { RouterLink } from 'vue-router';
 
 export default {
   data() {
