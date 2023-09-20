@@ -1,5 +1,5 @@
 <template lang="">
-    <button :class="buttonClass" class="" >{{title}}</button>
+    <button :class="buttonClass" class="hover:shadow" >{{title}}</button>
 </template>
 <script>
 export default {
