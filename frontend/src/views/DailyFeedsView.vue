@@ -2,9 +2,9 @@
   <daily-feeds />
 </template>
 <script>
-import DailyFeeds from '@/components/DailyFeeds.vue';
+import DailyFeeds from '@/components/feeds/DailyFeeds.vue'
 export default {
-  name: "DailyFeedsView",
+  name: 'DailyFeedsView',
   components: {
     DailyFeeds
   }

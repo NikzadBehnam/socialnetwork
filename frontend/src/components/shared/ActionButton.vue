@@ -1,18 +1,22 @@
 <template lang="">
-    <button :class="buttonClass" class="hover:shadow" >{{title}}</button>
+  <button  :class="[buttonClass, isSmall ? 'px-3 py-2 text-sm' : 'px-4 py-3']"  class="hover:shadow">{{ title }}</button>
 </template>
 <script>
 export default {
-  name: "ActionButton",
+  name: 'ActionButton',
   props: {
     title: String,
+    isSmall: {
+      type: Boolean,
+      default: false
+    },
     type: {
       type: String,
       default: 'secondary',
       validator: (value) => {
-        return ['secondary', 'primary', 'danger', 'success', 'warning'].includes(value);
-      },
-    },
+        return ['secondary', 'primary', 'danger', 'success', 'warning', 'info'].includes(value)
+      }
+    }
   },
   computed: {
     buttonClass() {
@@ -24,23 +28,22 @@ export default {
 }
 </script>
 <style scoped>
-  .primary{
-   @apply rounded bg-blue-400 text-white px-3 py-2;       
-  }
-  .secondary{
-    @apply rounded bg-gray-400 text-white px-3 py-2;   
-  }
-  .danger{
-    @apply rounded bg-red-400 text-white px-3 py-2;   
-    
-  }
-  .success{
-    @apply rounded bg-green-400 text-white px-3 py-2;   
-
-  }
-  .warning{
-    @apply rounded bg-yellow-400 text-white px-3 py-2;   
-
-  }
-
+.primary {
+  @apply rounded bg-blue-400 text-white;
+}
+.secondary {
+  @apply rounded bg-gray-400 text-white;
+}
+.danger {
+  @apply rounded bg-red-400 text-white;
+}
+.success {
+  @apply rounded bg-green-400 text-white;
+}
+.warning {
+  @apply rounded bg-yellow-400 text-white;
+}
+.info {
+  @apply rounded bg-blue-800 text-white;
+}
 </style>

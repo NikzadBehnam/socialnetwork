@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import FormInput from '../shared/FormInput.vue';
-import ActionButton from '../shared/ActionButton.vue';
+import FormInput from '../shared/FormInput.vue'
+import ActionButton from '../shared/ActionButton.vue'
 export default {
-  name: "SignUp",
+  name: 'SignUp',
   data() {
     return {
-      email: "",
-      password: "",
+      email: '',
+      password: ''
     }
   },
   components: {

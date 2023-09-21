@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <nav class="px-8 py-10 border-b border-gray-200">
@@ -23,7 +22,7 @@
           </a>
         </div>
         <div class="w-10 h-10 border rounded-full border-gray-50">
-          <img :src="userImage" alt="">
+          <img :src="userImage" alt="" />
         </div>
       </div>
     </div>
@@ -32,7 +31,7 @@
     <RouterView />
   </main>
 </template>
-<script >
+<script>
 import userImage from '@/assets/userimage.png'
 
 export default {
