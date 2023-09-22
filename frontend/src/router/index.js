@@ -4,6 +4,7 @@ import SignupView from '@/views/auth/SignupView.vue'
 import LoginView from '@/views/auth/LoginView.vue'
 import DailyFeedsView from '@/views/DailyFeedsView.vue'
 import ChatSystemView from '@/views/ChatSystemView.vue'
+import SearchProfilesView from '@/views/SearchView/SearchProfilesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/chat',
       name: 'chat',
       component: ChatSystemView
+    },
+    {
+      path: '/searchprofiles',
+      name: 'searchprofiles',
+      component: SearchProfilesView
     },
     {
       path: '/feeds',

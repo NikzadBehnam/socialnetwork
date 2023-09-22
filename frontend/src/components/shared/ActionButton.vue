@@ -1,5 +1,7 @@
 <template lang="">
-  <button  :class="[buttonClass, isSmall ? 'px-3 py-2 text-sm' : 'px-4 py-3']"  class="hover:shadow">{{ title }}</button>
+  <button :class="[buttonClass, isSmall ? 'py-2 px-3 text-sm' : 'px-4 py-3']" class="hover:shadow">
+    {{ title }}
+  </button>
 </template>
 <script>
 export default {
